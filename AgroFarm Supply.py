@@ -309,6 +309,9 @@ def cariproduk():
         input("Klik Enter untuk kembali...")
         return
 
+    hasil = hasil.reset_index(drop=True)
+    hasil.insert(0, "No", range(1, len(hasil) + 1))
+
     print(tabulate(hasil, headers='keys', tablefmt='fancy_grid', showindex=False))
 
     keranjang_file = f'keranjang_{usernamelogin}.csv'
