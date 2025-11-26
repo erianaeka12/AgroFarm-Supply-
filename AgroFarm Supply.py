@@ -282,6 +282,7 @@ def menubelanja():
                 print(f"Terjadi error: {e}")
                 break
 
+
 def cariproduk():
     os.system('cls')
     print('***************************************')
@@ -401,7 +402,6 @@ def cariproduk():
             break
 
     input("Klik Enter untuk kembali...")
-
 
 
 def keranjang():
@@ -611,9 +611,6 @@ def riwayatpembelian():
     print(tabulate(user_history, headers='keys', tablefmt='fancy_grid', showindex=True))
     input("Klik Enter untuk kembali...")
     menucustomer()
-
-
-
 
 
 def login_admin():
@@ -949,7 +946,6 @@ def konfirmasipesanan():
 
         except ValueError:
             print("Input harus berupa angka!")
-
 
 
 def pesananpelanggan():
